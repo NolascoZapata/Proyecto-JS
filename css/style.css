@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*---Colores---*/
+/*---Fuente---*/
+* {
+  margin: 0;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+/*---Fondo de páginas---*/
+body,
+footer {
+  background-image: url("../img/fondo-pag.jpg");
+  background-repeat: repeat;
+}
+
+.redes, .prod-nav, .quienes, .prom-img, .img-portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---Header---*/
+.img-portada {
+  background-color: white;
+  height: 25vh;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.5rem;
+}
+.navbar .navbar-nav a:hover {
+  color: salmon !important;
+}
+
+/*---Imagen con título de página---*/
+.img-title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  /*---Slogan en página principal---*/
+  /*---Nombre de categoría---*/
+}
+@media screen and (max-width: 768px) {
+  .img-title {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.img-title .slogan {
+  color: salmon;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+  width: 15rem;
+  top: 4.75rem;
+  left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .img-title .slogan {
+    font-size: 2.75rem;
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .img-title .slogan {
+    font-size: 1.34rem;
+    width: 7rem;
+  }
+}
+.img-title .cat-name {
+  color: salmon;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 6rem;
+  width: 20rem;
+  top: 4.75rem;
+  left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .img-title .cat-name {
+    font-size: 3rem;
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .img-title .cat-name {
+    font-size: 2rem;
+    width: 7.5rem;
+  }
+}
+
+/*---Título promoción---*/
+.prom-title {
+  text-align: center;
+  background: none;
+  background-color: rebeccapurple;
+  padding: 2rem;
+  color: white;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .prom-title {
+    padding: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .prom-title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/*---Imagen promoción---*/
+.prom-img .carousel-75 {
+  margin-top: 2rem !important;
+}
+@media screen and (max-width: 768px) {
+  .prom-img .carousel-75 {
+    padding: 0.8rem;
+    font-size: 2.5rem;
+    margin-top: 0.5rem !important;
+  }
+}
+.prom-img h3 {
+  color: salmon;
+}
+
+/*---¿Quienes somos?---*/
+.quienes {
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.quienes .quest {
+  color: rebeccapurple;
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .quienes .quest {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quienes .quest {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+.quienes .answ {
+  color: salmon;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .quienes .answ {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quienes .answ {
+    font-size: 0.8rem;
+  }
+}
+
+/*---Navegador de talles y productos---*/
+.prod-nav {
+  flex-direction: column;
+}
+.prod-nav .talles {
+  margin-bottom: 2rem;
+}
+.prod-nav .talles a:hover {
+  color: salmon;
+}
+.prod-nav .img-prod {
+  margin-bottom: 2rem;
+}
+.prod-nav .img-prod:hover {
+  transform: scale(1.05);
+}
+
+/*---Formulario dudas---*/
+.dudas {
+  font-family: "Cabin", sans-serif;
+  color: rebeccapurple;
+}
+.dudas h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.dudas label {
+  font-size: 1rem;
+}
+.dudas label .checkbox {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.dudas .btn-primary {
+  color: white !important;
+  background-color: rebeccapurple !important;
+  border-color: rebeccapurple !important;
+  margin: 2rem;
+  font-size: 1rem;
+  font-family: "Cabin", sans-serif;
+}
+.dudas .btn-primary:hover {
+  color: rebeccapurple !important;
+  background-color: salmon !important;
+  border-color: rebeccapurple !important;
+}
+
+/*---Redes sociales---*/
+.redes a {
+  color: salmon !important;
+}
+.redes a:hover {
+  color: rebeccapurple !important;
+}
+
+/*# sourceMappingURL=style.css.map */

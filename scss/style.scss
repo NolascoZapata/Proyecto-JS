@@ -1,0 +1,297 @@
+@import "_components/colores-fuente";
+@import "_components/header";
+
+* {
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+/*---Fondo de páginas---*/
+body,
+footer {
+    background-image: url("../img/fondo-pag.jpg");
+    background-repeat: repeat;
+
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---Header---*/
+
+.img-portada {
+    background-color: $c3;
+    height: 25vh;
+    @extend %flex;
+
+}
+
+.navbar {
+    .navbar-nav {
+
+        a {
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $c1 !important;
+            }
+        }
+    }
+
+}
+
+
+/*---Imagen con título de página---*/
+.img-title {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+
+    @media screen and (max-width:768px) {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    /*---Slogan en página principal---*/
+    .slogan {
+        color: $c1;
+        font-family: $f1;
+        font-style: italic;
+        font-size: 4rem;
+        width: 15rem;
+        top: 4.75rem;
+        left: 2rem;
+
+
+        @media screen and (max-width:768px) {
+            font-size: 2.75rem;
+            width: 10rem;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 1.34rem;
+            width: 7rem;
+
+        }
+
+
+    }
+
+    /*---Nombre de categoría---*/
+    .cat-name {
+        color: $c1;
+        font-family: $f1;
+        font-style: italic;
+        font-size: 6rem;
+        width: 20rem;
+        top: 4.75rem;
+        left: 2rem;
+
+        @media screen and (max-width:768px) {
+            font-size: 3rem;
+            width: 15rem;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 2rem;
+            width: 7.5rem;
+
+        }
+
+    }
+}
+
+
+
+/*---Título promoción---*/
+.prom-title {
+    text-align: center;
+    background: none;
+    background-color: $c2;
+    padding: 2rem;
+    color: $c3;
+    font-size: 3rem;
+
+    @media screen and (max-width:768px) {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+
+    }
+
+    @media screen and (max-width:576px) {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+
+    }
+
+}
+
+/*---Imagen promoción---*/
+.prom-img {
+    @extend %flex;
+
+    .carousel-75 {
+        margin-top: 2rem !important;
+
+        @media screen and (max-width:768px) {
+            padding: 0.8rem;
+            font-size: 2.5rem;
+            margin-top: 0.5rem !important;
+
+        }
+
+
+
+
+
+    }
+    
+    h3{
+        color: $c1
+    }
+}
+
+
+/*---¿Quienes somos?---*/
+.quienes {
+    @extend %flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+
+
+    .quest {
+        color: $c2;
+        font-family: $f1;
+        font-size: 3rem;
+
+        @media screen and (max-width:768px) {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+
+
+    }
+
+    .answ {
+        color: $c1;
+        font-family: $f1;
+        font-size: 2rem;
+        text-align: center;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.5rem;
+
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 0.8rem;
+        }
+
+
+
+    }
+
+
+
+}
+
+/*---Navegador de talles y productos---*/
+.prod-nav {
+    @extend %flex;
+    flex-direction: column;
+
+
+
+
+    .talles {
+        margin-bottom: 2rem;
+
+
+        a {
+            &:hover {
+                color: $c1;
+            }
+        }
+    }
+
+    .img-prod {
+        margin-bottom: 2rem;
+
+
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+
+}
+
+/*---Formulario dudas---*/
+.dudas {
+    font-family: $f1;
+    color: $c2;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 1rem;
+
+        .checkbox {
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
+
+
+
+    }
+
+    .btn-primary {
+        color: $c3 !important;
+        background-color: $c2 !important;
+        border-color: $c2 !important;
+        margin: 2rem;
+        font-size: 1rem;
+        font-family: $f1;
+
+        &:hover {
+            color: $c2 !important;
+            background-color: $c1 !important;
+            border-color: $c2 !important;
+        }
+    }
+
+
+}
+
+/*---Redes sociales---*/
+.redes {
+    @extend %flex;
+
+    a {
+        color: $c1 !important;
+
+        &:hover {
+            color: $c2 !important;
+        }
+    }
+}
