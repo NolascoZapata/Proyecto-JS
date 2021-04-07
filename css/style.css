@@ -12,6 +12,7 @@ body,
 footer {
   background-image: url("../img/fondo-pag.jpg");
   background-repeat: repeat;
+  margin: 0.25rem;
 }
 
 .redes, .prod-nav, .quienes, .prom-img, .img-portada {
@@ -23,7 +24,15 @@ footer {
 /*---Header---*/
 .img-portada {
   background-color: white;
-  height: 25vh;
+  height: 20vh;
+}
+@media screen and (max-width: 576px) {
+  .img-portada {
+    height: 15vh;
+  }
+  .img-portada img {
+    height: 15vh;
+  }
 }
 
 .navbar .navbar-nav a {
@@ -35,35 +44,47 @@ footer {
 
 /*---Imagen con título de página---*/
 .img-title {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  border: none !important;
   /*---Slogan en página principal---*/
   /*---Nombre de categoría---*/
 }
 @media screen and (max-width: 768px) {
   .img-title {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
   }
 }
-.img-title .slogan {
+.img-title .tarjeta-texto {
+  padding: 0.7rem 0.7rem 0rem 3rem !important;
+}
+@media screen and (max-width: 768px) {
+  .img-title .tarjeta-texto {
+    padding: 0.7rem 0.7rem 0.7rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .img-title .tarjeta-texto {
+    padding: 0.7rem 0.7rem 0.7rem 1rem !important;
+  }
+}
+.img-title .tarjeta-texto .slogan {
   color: salmon;
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 4rem;
-  width: 15rem;
+  width: 20rem;
   top: 4.75rem;
   left: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .img-title .slogan {
-    font-size: 2.75rem;
+  .img-title .tarjeta-texto .slogan {
+    font-size: 2.5rem;
     width: 10rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .img-title .slogan {
-    font-size: 1.34rem;
+  .img-title .tarjeta-texto .slogan {
+    font-size: 1.45rem;
     width: 7rem;
   }
 }
@@ -100,7 +121,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .prom-title {
-    padding: 1.5rem;
+    padding: 1.25rem;
     font-size: 2.5rem;
   }
 }
@@ -156,6 +177,7 @@ footer {
   font-family: "Cabin", sans-serif;
   font-size: 2rem;
   text-align: center;
+  width: 57vw;
 }
 @media screen and (max-width: 768px) {
   .quienes .answ {
@@ -216,6 +238,9 @@ footer {
 }
 
 /*---Redes sociales---*/
+.redes {
+  margin-bottom: 1rem;
+}
 .redes a {
   color: salmon !important;
 }

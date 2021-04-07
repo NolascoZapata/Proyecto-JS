@@ -12,7 +12,7 @@ body,
 footer {
     background-image: url("../img/fondo-pag.jpg");
     background-repeat: repeat;
-
+    margin: 0.25rem;
 }
 
 %flex {
@@ -25,12 +25,26 @@ footer {
 
 .img-portada {
     background-color: $c3;
-    height: 25vh;
+    height: 20vh;
     @extend %flex;
+
+
+    @media screen and (max-width:576px) {
+      height: 15vh;
+
+
+      img{
+          height: 15vh;
+      }
+    
+    }
+
+
 
 }
 
 .navbar {
+
     .navbar-nav {
 
         a {
@@ -47,40 +61,57 @@ footer {
 
 /*---Imagen con título de página---*/
 .img-title {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    border: none !important;
 
 
     @media screen and (max-width:768px) {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
+       
+        margin-bottom: 0.25rem;
 
     }
 
     /*---Slogan en página principal---*/
-    .slogan {
-        color: $c1;
-        font-family: $f1;
-        font-style: italic;
-        font-size: 4rem;
-        width: 15rem;
-        top: 4.75rem;
-        left: 2rem;
-
+    .tarjeta-texto{
+        padding: 0.7rem 0.7rem 0rem 3rem !important;
 
         @media screen and (max-width:768px) {
-            font-size: 2.75rem;
-            width: 10rem;
+            padding: 0.7rem 0.7rem 0.7rem 1.5rem !important;
+
         }
 
         @media screen and (max-width:576px) {
-            font-size: 1.34rem;
-            width: 7rem;
+            padding: 0.7rem 0.7rem 0.7rem 1rem !important;
 
         }
 
+        .slogan {
+            color: $c1;
+            font-family: $f1;
+            font-style: italic;
+            font-size: 4rem;
+            width: 20rem;
+            top: 4.75rem;
+            left: 2rem;
+    
+    
+            @media screen and (max-width:768px) {
+                font-size: 2.5rem;
+                width: 10rem;
+            }
+    
+            @media screen and (max-width:576px) {
+                font-size: 1.45rem;
+                width: 7rem;
+    
+            }
+    
+    
+        }
 
     }
+
+   
 
     /*---Nombre de categoría---*/
     .cat-name {
@@ -118,7 +149,7 @@ footer {
     font-size: 3rem;
 
     @media screen and (max-width:768px) {
-        padding: 1.5rem;
+        padding: 1.25rem;
         font-size: 2.5rem;
 
     }
@@ -134,7 +165,7 @@ footer {
 /*---Imagen promoción---*/
 .prom-img {
     @extend %flex;
-
+    
     .carousel-75 {
         margin-top: 2rem !important;
 
@@ -163,6 +194,7 @@ footer {
     flex-direction: column;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    
 
 
 
@@ -193,6 +225,7 @@ footer {
         font-family: $f1;
         font-size: 2rem;
         text-align: center;
+        width: 57vw;
 
         @media screen and (max-width:768px) {
             font-size: 1.5rem;
@@ -286,7 +319,7 @@ footer {
 /*---Redes sociales---*/
 .redes {
     @extend %flex;
-
+    margin-bottom: 1rem;
     a {
         color: $c1 !important;
 

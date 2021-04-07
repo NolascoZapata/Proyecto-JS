@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NolascoZapata/Proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NolascoZapata/Proyecto/issues"
+  },
+  "homepage": "https://github.com/NolascoZapata/Proyecto#readme",
   "description": ""
 }
