@@ -26,6 +26,9 @@ footer {
   background-color: white;
   height: 20vh;
 }
+.img-portada img {
+  height: 20vh;
+}
 @media screen and (max-width: 576px) {
   .img-portada {
     height: 15vh;

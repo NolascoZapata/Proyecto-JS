@@ -27,6 +27,11 @@ footer {
     background-color: $c3;
     height: 20vh;
     @extend %flex;
+    img{
+        height: 20vh;
+    }
+
+
 
 
     @media screen and (max-width:576px) {
