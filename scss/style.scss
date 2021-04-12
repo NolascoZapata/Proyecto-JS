@@ -86,7 +86,7 @@ footer {
         }
 
         @media screen and (max-width:576px) {
-            padding: 0.7rem 0.7rem 0.7rem 1rem !important;
+            padding: 0.7rem !important;
 
         }
 
@@ -267,16 +267,34 @@ footer {
             }
         }
     }
-
-    .img-prod {
-        margin-bottom: 2rem;
+    .box-prod{
 
 
+        .img-prod {
+            margin-bottom: 2rem;
 
-        &:hover {
-            transform: scale(1.05);
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            .descuento{
+                margin-left: 0.5rem;
+                color: $c2 ;
+                                
+            }
+
+            
+    
+    
+            
+        }
+
+        @media screen and (max-width:768px) {
+            width: 75%;
+            height: 75%;
         }
     }
+    
 
 
 }

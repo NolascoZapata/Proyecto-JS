@@ -67,7 +67,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .img-title .tarjeta-texto {
-    padding: 0.7rem 0.7rem 0.7rem 1rem !important;
+    padding: 0.7rem !important;
   }
 }
 .img-title .tarjeta-texto .slogan {
@@ -203,11 +203,21 @@ footer {
 .prod-nav .talles a:hover {
   color: salmon;
 }
-.prod-nav .img-prod {
+.prod-nav .box-prod .img-prod {
   margin-bottom: 2rem;
 }
-.prod-nav .img-prod:hover {
+.prod-nav .box-prod .img-prod:hover {
   transform: scale(1.05);
+}
+.prod-nav .box-prod .img-prod .descuento {
+  margin-left: 0.5rem;
+  color: rebeccapurple;
+}
+@media screen and (max-width: 768px) {
+  .prod-nav .box-prod {
+    width: 75%;
+    height: 75%;
+  }
 }
 
 /*---Formulario dudas---*/
