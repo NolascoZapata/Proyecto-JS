@@ -1,0 +1,12 @@
+/*---Redes sociales---*/
+.redes {
+    @extend %flex;
+    margin-bottom: 1rem;
+    a {
+        color: $c1 !important;
+
+        &:hover {
+            color: $c2 !important;
+        }
+    }
+}

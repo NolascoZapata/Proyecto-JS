@@ -1,26 +1,6 @@
 @charset "UTF-8";
 /*---Colores---*/
 /*---Fuente---*/
-* {
-  margin: 0;
-  padding: 0 auto;
-  box-sizing: border-box;
-}
-
-/*---Fondo de páginas---*/
-body,
-footer {
-  background-image: url("../img/fondo-pag.jpg");
-  background-repeat: repeat;
-  margin: 0.25rem;
-}
-
-.redes, .prod-nav, .quienes, .prom-img, .img-portada {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*---Header---*/
 .img-portada {
   background-color: white;
@@ -45,6 +25,109 @@ footer {
   color: salmon !important;
 }
 
+/*---Redes sociales---*/
+.redes {
+  margin-bottom: 1rem;
+}
+.redes a {
+  color: salmon !important;
+}
+.redes a:hover {
+  color: rebeccapurple !important;
+}
+
+/*---Título promoción---*/
+.prom-title {
+  text-align: center;
+  background: none;
+  background-color: rebeccapurple;
+  padding: 2rem;
+  color: white;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .prom-title {
+    padding: 1.25rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .prom-title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/*---Imagen promoción---*/
+.prom-img .carousel-75 {
+  margin-top: 2rem !important;
+}
+@media screen and (max-width: 768px) {
+  .prom-img .carousel-75 {
+    padding: 0.8rem;
+    font-size: 2.5rem;
+    margin-top: 0.5rem !important;
+  }
+}
+.prom-img h3 {
+  color: salmon;
+}
+
+/*---Formulario dudas---*/
+.dudas {
+  font-family: "Cabin", sans-serif;
+  color: rebeccapurple;
+}
+.dudas h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+@media screen and (max-width: 576px) {
+  .dudas h2 {
+    font-size: 1.5rem;
+  }
+}
+.dudas label {
+  font-size: 1rem;
+}
+.dudas label .checkbox {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.dudas .btn-primary {
+  color: white !important;
+  background-color: rebeccapurple !important;
+  border-color: rebeccapurple !important;
+  margin: 2rem;
+  font-size: 1rem;
+  font-family: "Cabin", sans-serif;
+}
+.dudas .btn-primary:hover {
+  color: rebeccapurple !important;
+  background-color: salmon !important;
+  border-color: rebeccapurple !important;
+}
+
+* {
+  margin: 0;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+/*---Fondo de páginas---*/
+body,
+footer {
+  background-image: url("../img/fondo-pag.jpg");
+  background-repeat: repeat;
+  margin: 0.25rem;
+}
+
+.prod-nav, .quienes, .img-portada, .redes, .prom-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*---Imagen con título de página---*/
 .img-title {
   margin-bottom: 1rem;
@@ -67,7 +150,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   .img-title .tarjeta-texto {
-    padding: 0.7rem !important;
+    padding: 0.3rem !important;
   }
 }
 .img-title .tarjeta-texto .slogan {
@@ -111,43 +194,6 @@ footer {
     font-size: 2rem;
     width: 7.5rem;
   }
-}
-
-/*---Título promoción---*/
-.prom-title {
-  text-align: center;
-  background: none;
-  background-color: rebeccapurple;
-  padding: 2rem;
-  color: white;
-  font-size: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .prom-title {
-    padding: 1.25rem;
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .prom-title {
-    padding: 0.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-/*---Imagen promoción---*/
-.prom-img .carousel-75 {
-  margin-top: 2rem !important;
-}
-@media screen and (max-width: 768px) {
-  .prom-img .carousel-75 {
-    padding: 0.8rem;
-    font-size: 2.5rem;
-    margin-top: 0.5rem !important;
-  }
-}
-.prom-img h3 {
-  color: salmon;
 }
 
 /*---¿Quienes somos?---*/
@@ -199,6 +245,8 @@ footer {
 }
 .prod-nav .talles {
   margin-bottom: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
 }
 .prod-nav .talles a:hover {
   color: salmon;
@@ -210,55 +258,15 @@ footer {
   transform: scale(1.05);
 }
 .prod-nav .box-prod .img-prod .descuento {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   color: rebeccapurple;
+  border: solid rebeccapurple;
+  border-radius: 20%;
 }
-@media screen and (max-width: 768px) {
-  .prod-nav .box-prod {
+@media screen and (max-width: 576px) {
+  .prod-nav .box-prod .prec-prod {
     width: 75%;
-    height: 75%;
   }
-}
-
-/*---Formulario dudas---*/
-.dudas {
-  font-family: "Cabin", sans-serif;
-  color: rebeccapurple;
-}
-.dudas h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-.dudas label {
-  font-size: 1rem;
-}
-.dudas label .checkbox {
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
-}
-.dudas .btn-primary {
-  color: white !important;
-  background-color: rebeccapurple !important;
-  border-color: rebeccapurple !important;
-  margin: 2rem;
-  font-size: 1rem;
-  font-family: "Cabin", sans-serif;
-}
-.dudas .btn-primary:hover {
-  color: rebeccapurple !important;
-  background-color: salmon !important;
-  border-color: rebeccapurple !important;
-}
-
-/*---Redes sociales---*/
-.redes {
-  margin-bottom: 1rem;
-}
-.redes a {
-  color: salmon !important;
-}
-.redes a:hover {
-  color: rebeccapurple !important;
 }
 
 /*# sourceMappingURL=style.css.map */
