@@ -28,7 +28,7 @@ footer {
 /*---Imagen con título de página---*/
 .img-title {
     margin-bottom: 1rem;
-    border: none !important;
+    border: none ;
 
 
     @media screen and (max-width:768px) {
@@ -39,15 +39,15 @@ footer {
 
     /*---Slogan en página principal---*/
     .tarjeta-texto{
-        padding: 0.7rem 0.7rem 0rem 3rem !important;
+        padding: 0.7rem 0.7rem 0rem 3rem ;
 
         @media screen and (max-width:768px) {
-            padding: 0.7rem 0.7rem 0.7rem 1.5rem !important;
+            padding: 0.7rem 0.7rem 0.7rem 1.5rem ;
 
         }
 
         @media screen and (max-width:576px) {
-            padding: 0.3rem !important;
+            padding: 0.3rem ;
 
         }
 

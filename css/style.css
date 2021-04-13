@@ -30,10 +30,10 @@
   margin-bottom: 1rem;
 }
 .redes a {
-  color: salmon !important;
+  color: salmon;
 }
 .redes a:hover {
-  color: rebeccapurple !important;
+  color: rebeccapurple;
 }
 
 /*---Título promoción---*/
@@ -62,6 +62,10 @@
 .prom-img .carousel-75 {
   margin-top: 2rem !important;
 }
+.prom-img .carousel-75 .flecha {
+  background-color: rebeccapurple;
+  border-radius: 50%;
+}
 @media screen and (max-width: 768px) {
   .prom-img .carousel-75 {
     padding: 0.8rem;
@@ -89,23 +93,21 @@
 }
 .dudas label {
   font-size: 1rem;
-}
-.dudas label .checkbox {
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .dudas .btn-primary {
-  color: white !important;
-  background-color: rebeccapurple !important;
-  border-color: rebeccapurple !important;
+  color: white;
+  background-color: rebeccapurple;
+  border-color: rebeccapurple;
   margin: 2rem;
   font-size: 1rem;
   font-family: "Cabin", sans-serif;
 }
 .dudas .btn-primary:hover {
-  color: rebeccapurple !important;
-  background-color: salmon !important;
-  border-color: rebeccapurple !important;
+  color: rebeccapurple;
+  background-color: salmon;
+  border-color: rebeccapurple;
 }
 
 * {
@@ -131,7 +133,7 @@ footer {
 /*---Imagen con título de página---*/
 .img-title {
   margin-bottom: 1rem;
-  border: none !important;
+  border: none;
   /*---Slogan en página principal---*/
   /*---Nombre de categoría---*/
 }
@@ -141,16 +143,16 @@ footer {
   }
 }
 .img-title .tarjeta-texto {
-  padding: 0.7rem 0.7rem 0rem 3rem !important;
+  padding: 0.7rem 0.7rem 0rem 3rem;
 }
 @media screen and (max-width: 768px) {
   .img-title .tarjeta-texto {
-    padding: 0.7rem 0.7rem 0.7rem 1.5rem !important;
+    padding: 0.7rem 0.7rem 0.7rem 1.5rem;
   }
 }
 @media screen and (max-width: 576px) {
   .img-title .tarjeta-texto {
-    padding: 0.3rem !important;
+    padding: 0.3rem;
   }
 }
 .img-title .tarjeta-texto .slogan {

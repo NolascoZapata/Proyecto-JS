@@ -3,10 +3,10 @@
     @extend %flex;
     margin-bottom: 1rem;
     a {
-        color: $c1 !important;
+        color: $c1 ;
 
         &:hover {
-            color: $c2 !important;
+            color: $c2 ;
         }
     }
 }

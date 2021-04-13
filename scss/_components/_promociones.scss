@@ -28,6 +28,10 @@
     
     .carousel-75 {
         margin-top: 2rem !important;
+        .flecha{
+            background-color:$c2;
+            border-radius: 50%;
+        }
 
         @media screen and (max-width:768px) {
             padding: 0.8rem;
@@ -45,4 +49,6 @@
     h3{
         color: $c1
     }
+
+            
 }
