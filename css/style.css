@@ -179,9 +179,9 @@ footer {
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 6rem;
-  width: 20rem;
+  width: 21rem;
   top: 4.75rem;
-  left: 2rem;
+  left: rem;
 }
 @media screen and (max-width: 768px) {
   .img-title .cat-name {
