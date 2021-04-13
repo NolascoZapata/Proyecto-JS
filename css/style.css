@@ -180,8 +180,8 @@ footer {
   font-style: italic;
   font-size: 6rem;
   width: 21rem;
-  top: 4.75rem;
-  left: rem;
+  margin-top: 1rem;
+  margin-left: 0.25rem;
 }
 @media screen and (max-width: 768px) {
   .img-title .cat-name {
@@ -193,6 +193,8 @@ footer {
   .img-title .cat-name {
     font-size: 2rem;
     width: 7.5rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
   }
 }
 
