@@ -181,7 +181,7 @@ footer {
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 6rem;
-  width: 21rem;
+  width: 22rem;
   margin-top: 1rem;
   margin-left: 0.25rem;
 }
@@ -271,6 +271,13 @@ footer {
   .prod-nav .box-prod .prec-prod {
     width: 75%;
   }
+}
+.prod-nav .box-prod .prec-prod .prec-ant {
+  text-decoration: line-through;
+}
+.prod-nav .box-prod .prec-prod .prec-nuevo {
+  color: rebeccapurple;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

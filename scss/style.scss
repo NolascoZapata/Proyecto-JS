@@ -85,7 +85,7 @@ footer {
         font-family: $f1;
         font-style: italic;
         font-size: 6rem;
-        width: 21rem;
+        width: 22rem;
         margin-top: 1rem;
         margin-left: 0.25rem;
 
@@ -215,6 +215,14 @@ footer {
             @media screen and (max-width:576px) {
                 width: 75%;
                
+            }
+
+            .prec-ant{
+                text-decoration:line-through;
+            }
+            .prec-nuevo{
+                color:$c2;
+                font-weight: bold;
             }
         }
     }
