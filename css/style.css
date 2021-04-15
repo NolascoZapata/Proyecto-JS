@@ -124,7 +124,7 @@ footer {
   margin: 0.25rem;
 }
 
-.prod-nav, .quienes, .img-portada, .redes, .prom-img {
+.prod-nav .box-prod .tab-pane .img-prod, .prod-nav, .quienes, .img-portada, .redes, .prom-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,27 +255,30 @@ footer {
 .prod-nav .talles a:hover {
   color: salmon;
 }
-.prod-nav .box-prod .img-prod {
+.prod-nav .box-prod .tab-pane {
+  transition: 0.5s;
+}
+.prod-nav .box-prod .tab-pane .img-prod {
   margin-bottom: 2rem;
 }
-.prod-nav .box-prod .img-prod:hover {
+.prod-nav .box-prod .tab-pane .img-prod:hover {
   transform: scale(1.05);
 }
-.prod-nav .box-prod .img-prod .descuento {
+@media screen and (max-width: 576px) {
+  .prod-nav .box-prod .tab-pane .img-prod .prec-prod {
+    width: 75%;
+  }
+}
+.prod-nav .box-prod .tab-pane .img-prod .prec-prod .descuento {
   margin-left: 1rem;
   color: rebeccapurple;
   border: solid rebeccapurple;
   border-radius: 20%;
 }
-@media screen and (max-width: 576px) {
-  .prod-nav .box-prod .prec-prod {
-    width: 75%;
-  }
-}
-.prod-nav .box-prod .prec-prod .prec-ant {
+.prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-ant {
   text-decoration: line-through;
 }
-.prod-nav .box-prod .prec-prod .prec-nuevo {
+.prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-nuevo {
   color: rebeccapurple;
   font-weight: bold;
 }

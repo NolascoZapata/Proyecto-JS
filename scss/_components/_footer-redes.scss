@@ -2,11 +2,12 @@
 .redes {
     @extend %flex;
     margin-bottom: 1rem;
+
     a {
-        color: $c1 ;
+        color: $c1;
 
         &:hover {
-            color: $c2 ;
+            color: $c2;
         }
     }
 }

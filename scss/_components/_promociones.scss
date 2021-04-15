@@ -25,11 +25,12 @@
 /*---Imagen promoción---*/
 .prom-img {
     @extend %flex;
-    
+
     .carousel-75 {
         margin-top: 2rem !important;
-        .flecha{
-            background-color:$c2;
+
+        .flecha {
+            background-color: $c2;
             border-radius: 50%;
         }
 
@@ -41,14 +42,11 @@
         }
 
 
-
-
-
     }
-    
-    h3{
+
+    h3 {
         color: $c1
     }
 
-            
+
 }

@@ -3,6 +3,7 @@
 @import "_components/footer-redes";
 @import "_components/promociones";
 @import "_components/formulario-contacto";
+
 * {
     margin: 0;
     padding: 0 auto;
@@ -28,26 +29,26 @@ footer {
 /*---Imagen con título de página---*/
 .img-title {
     margin-bottom: 1rem;
-    border: none ;
+    border: none;
 
 
     @media screen and (max-width:768px) {
-       
+
         margin-bottom: 0.25rem;
 
     }
 
     /*---Slogan en página principal---*/
-    .tarjeta-texto{
-        padding: 0.7rem 0.7rem 0rem 3rem ;
+    .tarjeta-texto {
+        padding: 0.7rem 0.7rem 0rem 3rem;
 
         @media screen and (max-width:768px) {
-            padding: 0.7rem 0.7rem 0.7rem 1.5rem ;
+            padding: 0.7rem 0.7rem 0.7rem 1.5rem;
 
         }
 
         @media screen and (max-width:576px) {
-            padding: 0.3rem ;
+            padding: 0.3rem;
 
         }
 
@@ -59,25 +60,25 @@ footer {
             width: 20rem;
             top: 4.75rem;
             left: 2rem;
-    
-    
+
+
             @media screen and (max-width:768px) {
                 font-size: 2.5rem;
                 width: 10rem;
             }
-    
+
             @media screen and (max-width:576px) {
                 font-size: 1.45rem;
                 width: 7rem;
-    
+
             }
-    
-    
+
+
         }
 
     }
 
-   
+
 
     /*---Nombre de categoría---*/
     .cat-name {
@@ -116,7 +117,7 @@ footer {
     flex-direction: column;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-    
+
 
 
 
@@ -178,7 +179,7 @@ footer {
         margin-bottom: 2rem;
         font-family: $f1;
         font-size: 1.5rem;
-        
+
 
         a {
             &:hover {
@@ -186,50 +187,61 @@ footer {
             }
         }
     }
-    .box-prod{
+
+    .box-prod {
+
+        .tab-pane {
+
+            transition: 0.5s;
+
+            .img-prod {
+                margin-bottom: 2rem;
+                @extend %flex;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                .prec-prod {
+                    @media screen and (max-width:576px) {
+                        width: 75%;
+
+                    }
+
+                    .descuento {
+                        margin-left: 1rem;
+                        color: $c2;
+                        border: solid $c2;
+                        border-radius: 20%;
 
 
-        .img-prod {
-            margin-bottom: 2rem;
+                    }
 
-            &:hover {
-                transform: scale(1.05);
+                    .prec-ant {
+                        text-decoration: line-through;
+                    }
+
+                    .prec-nuevo {
+                        color: $c2;
+                        font-weight: bold;
+                    }
+                }
+
+
+
+
+
+
             }
 
-            .descuento{
-                margin-left: 1rem;
-                color: $c2 ;
-                border: solid $c2;
-                border-radius: 20%;
-               
-                                
-            }
 
-            
-    
-    
-            
         }
 
-        .prec-prod{
-            @media screen and (max-width:576px) {
-                width: 75%;
-               
-            }
 
-            .prec-ant{
-                text-decoration:line-through;
-            }
-            .prec-nuevo{
-                color:$c2;
-                font-weight: bold;
-            }
-        }
+
+
     }
-    
+
 
 
 }
-
-
-
