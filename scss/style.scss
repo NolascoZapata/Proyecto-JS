@@ -1,6 +1,6 @@
 @import "_components/colores-fuente";
 @import "_components/header";
-@import "_components/footer-redes";
+@import "_components/footer";
 @import "_components/promociones";
 @import "_components/formulario-contacto";
 
@@ -27,16 +27,7 @@ main {
 
 /*---Imagen con título de página---*/
 .img-title {
-    .card {
-        border: none;
-        margin-bottom: 1rem;
-
-        @media screen and (max-width:768px) {
-            margin-bottom: 0.25rem;
-
-        }
-
-    }
+    border: none;
 
     /*---Slogan en página principal---*/
     .tarjeta-texto {
@@ -78,29 +69,23 @@ main {
 
     /*---Nombre de categoría---*/
     .cat-name {
+
         font-family: $f1;
         font-style: italic;
         font-size: 6rem;
-        width: 22rem;
+        text-align: center;
         margin-top: 1rem;
-        margin-left: 0.25rem;
         color: $c1;
 
         @media screen and (max-width:768px) {
-            font-size: 3rem;
-            width: 15rem;
+            font-size: 3.5rem;
         }
 
-        @media screen and (max-width:576px) {
-            font-size: 2rem;
-            width: 7.5rem;
-            margin-top: 0rem;
-            margin-left: 0rem;
 
-        }
 
     }
 }
+
 
 
 
@@ -228,6 +213,8 @@ main {
                         width: 75%;
 
                     }
+
+                    /*------Precios en Ofertas------*/
 
                     .descuento {
                         margin-left: 1rem;

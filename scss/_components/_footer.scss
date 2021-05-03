@@ -12,11 +12,27 @@ footer {
     @extend %flex;
     flex-direction: column;
 
+    @media screen and (max-width:576px) {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        
+    }
+
     label {
         font-size: 1rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         color: $c2;
+        font-weight: 800;
+
+        @media screen and (max-width:576px) {
+            font-size: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: $c2;
+            font-weight: 800;
+            
+        }
 
     }
 
@@ -33,11 +49,19 @@ footer {
             background-color: $c1;
             border-color: $c2;
         }
+
+        @media screen and (max-width:576px) {   
+            font-size: 0.5rem;
+            margin: 0.5rem;
+        }
     }
 }
 
 .boton-subir {
     margin-top: 1rem;
+    @media screen and (max-width:576px) {   
+        margin-top: 0.5rem;
+    }
 
     a {
         font-family: $f1;
@@ -55,6 +79,12 @@ footer {
             color: $c3;
             background-color: $c1;
             border-color: $c2;
+        }
+
+        @media screen and (max-width:576px) {   
+            border: 0.1rem solid;
+            padding: 0.2rem;
+            font-size: 1rem;
         }
     }
 

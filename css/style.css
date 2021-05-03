@@ -41,11 +41,27 @@ footer {
   margin-bottom: 1.2rem;
   flex-direction: column;
 }
+@media screen and (max-width: 576px) {
+  .newsletter {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
 .newsletter label {
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #957dad;
+  font-weight: 800;
+}
+@media screen and (max-width: 576px) {
+  .newsletter label {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #957dad;
+    font-weight: 800;
+  }
 }
 .newsletter .btn-primary {
   color: #ffff;
@@ -60,9 +76,20 @@ footer {
   background-color: #d291bc;
   border-color: #957dad;
 }
+@media screen and (max-width: 576px) {
+  .newsletter .btn-primary {
+    font-size: 0.5rem;
+    margin: 0.5rem;
+  }
+}
 
 .boton-subir {
   margin-top: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .boton-subir {
+    margin-top: 0.5rem;
+  }
 }
 .boton-subir a {
   font-family: "Cabin", sans-serif;
@@ -80,6 +107,13 @@ footer {
   color: #ffff;
   background-color: #d291bc;
   border-color: #957dad;
+}
+@media screen and (max-width: 576px) {
+  .boton-subir a {
+    border: 0.1rem solid;
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
 }
 
 /*---Redes sociales y Copyright---*/
@@ -197,17 +231,9 @@ main {
 
 /*---Imagen con título de página---*/
 .img-title {
+  border: none;
   /*---Slogan en página principal---*/
   /*---Nombre de categoría---*/
-}
-.img-title .card {
-  border: none;
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .img-title .card {
-    margin-bottom: 0.25rem;
-  }
 }
 .img-title .tarjeta-texto {
   padding: 0.7rem 0.7rem 0rem 3rem;
@@ -247,23 +273,13 @@ main {
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 6rem;
-  width: 22rem;
+  text-align: center;
   margin-top: 1rem;
-  margin-left: 0.25rem;
   color: #d291bc;
 }
 @media screen and (max-width: 768px) {
   .img-title .cat-name {
-    font-size: 3rem;
-    width: 15rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .img-title .cat-name {
-    font-size: 2rem;
-    width: 7.5rem;
-    margin-top: 0rem;
-    margin-left: 0rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -351,6 +367,9 @@ main {
 }
 .prod-nav .box-prod .tab-pane .img-prod:hover {
   transform: scale(1.05);
+}
+.prod-nav .box-prod .tab-pane .img-prod .prec-prod {
+  /*------Precios en Ofertas------*/
 }
 .prod-nav .box-prod .tab-pane .img-prod .prec-prod .card-title {
   color: #957dad;
