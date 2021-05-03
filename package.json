@@ -1,5 +1,5 @@
 {
-  "name": "Babie",
+  "name": "Babies",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/NolascoZapata/Proyecto.git"
   },
-  "author": "",
+  "author": "Nolasco_Zapata",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NolascoZapata/Proyecto/issues"
@@ -20,5 +20,5 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {},
-  "description": "Tienda de ropa para bebeés y niños"
+  "description": "Tienda_de_ropa_para_bebés_y_niños"
 }

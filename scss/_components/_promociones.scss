@@ -26,26 +26,32 @@
 .prom-img {
     @extend %flex;
 
-    .carousel-75 {
-        margin-top: 2rem !important;
+    .card {
+        border: none;
 
-        .flecha {
-            background-color: $c2;
-            border-radius: 50%;
+        .carousel-75 {
+            margin-top: 2rem !important;
+
+
+            .flecha {
+                background-color: $c2;
+                border-radius: 50%;
+            }
+
+            @media screen and (max-width:768px) {
+                padding: 0.8rem;
+                font-size: 2.5rem;
+                margin-top: 0.5rem !important;
+
+            }
+
+
         }
 
-        @media screen and (max-width:768px) {
-            padding: 0.8rem;
-            font-size: 2.5rem;
-            margin-top: 0.5rem !important;
-
+        h3 {
+            color: $c1
         }
 
-
-    }
-
-    h3 {
-        color: $c1
     }
 
 

@@ -11,10 +11,9 @@
 }
 
 /*---Fondo de páginas---*/
-body,
-footer {
-    background-image: url("../img/fondo-pag.jpg");
-    background-repeat: repeat;
+
+main {
+    background-color: $c3;
     margin: 0.25rem;
 }
 
@@ -28,13 +27,14 @@ footer {
 
 /*---Imagen con título de página---*/
 .img-title {
-    margin-bottom: 1rem;
-    border: none;
+    .card {
+        border: none;
+        margin-bottom: 1rem;
 
+        @media screen and (max-width:768px) {
+            margin-bottom: 0.25rem;
 
-    @media screen and (max-width:768px) {
-
-        margin-bottom: 0.25rem;
+        }
 
     }
 
@@ -72,23 +72,19 @@ footer {
                 width: 7rem;
 
             }
-
-
         }
 
     }
 
-
-
     /*---Nombre de categoría---*/
     .cat-name {
-        color: $c1;
         font-family: $f1;
         font-style: italic;
         font-size: 6rem;
         width: 22rem;
         margin-top: 1rem;
         margin-left: 0.25rem;
+        color: $c1;
 
         @media screen and (max-width:768px) {
             font-size: 3rem;
@@ -115,9 +111,24 @@ footer {
 .quienes {
     @extend %flex;
     flex-direction: column;
+    font-size: 2rem;
     margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
+
+    @media screen and (max-width:768px) {
+        font-size: 1.5rem;
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+
+    }
+
+    @media screen and (max-width:768px) {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+    }
 
 
 
@@ -173,19 +184,25 @@ footer {
     flex-direction: column;
 
 
-
-
     .talles {
         margin-bottom: 2rem;
         font-family: $f1;
         font-size: 1.5rem;
 
 
+
         a {
+            color: $c2;
+
             &:hover {
                 color: $c1;
             }
         }
+
+        .active {
+            color: $c1;
+        }
+
     }
 
     .box-prod {
@@ -203,6 +220,10 @@ footer {
                 }
 
                 .prec-prod {
+                    .card-title {
+                        color: $c2;
+                    }
+
                     @media screen and (max-width:576px) {
                         width: 75%;
 
@@ -219,29 +240,15 @@ footer {
 
                     .prec-ant {
                         text-decoration: line-through;
+                        color: $c5;
                     }
 
                     .prec-nuevo {
-                        color: $c2;
+                        color: $c1;
                         font-weight: bold;
                     }
                 }
-
-
-
-
-
-
             }
-
-
         }
-
-
-
-
     }
-
-
-
 }

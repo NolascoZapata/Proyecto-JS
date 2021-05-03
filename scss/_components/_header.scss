@@ -9,12 +9,8 @@
         height: 20vh;
     }
 
-
-
-
     @media screen and (max-width:576px) {
         height: 15vh;
-
 
         img {
             height: 15vh;
@@ -22,16 +18,19 @@
 
     }
 
-
-
 }
 
 .navbar {
 
     .navbar-nav {
 
+        .active {
+            color: $c1 !important;
+        }
+
         a {
             font-size: 1.5rem;
+            color: $c2 !important;
 
             &:hover {
                 color: $c1 !important;

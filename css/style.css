@@ -3,7 +3,7 @@
 /*---Fuente---*/
 /*---Header---*/
 .img-portada {
-  background-color: white;
+  background-color: #ffff;
   height: 20vh;
 }
 .img-portada img {
@@ -18,31 +18,95 @@
   }
 }
 
+.navbar .navbar-nav .active {
+  color: #d291bc !important;
+}
 .navbar .navbar-nav a {
   font-size: 1.5rem;
+  color: #957dad !important;
 }
 .navbar .navbar-nav a:hover {
-  color: salmon !important;
+  color: #d291bc !important;
 }
 
-/*---Redes sociales---*/
+footer {
+  background-color: #ffdfd3;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*---Newsletter---*/
+.newsletter {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  flex-direction: column;
+}
+.newsletter label {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #957dad;
+}
+.newsletter .btn-primary {
+  color: #ffff;
+  background-color: #957dad;
+  border-color: #957dad;
+  font-size: 1rem;
+  font-family: "Cabin", sans-serif;
+  margin: 1rem;
+}
+.newsletter .btn-primary:hover {
+  color: #ffff;
+  background-color: #d291bc;
+  border-color: #957dad;
+}
+
+.boton-subir {
+  margin-top: 1rem;
+}
+.boton-subir a {
+  font-family: "Cabin", sans-serif;
+  color: #ffff;
+  text-align: center;
+  text-decoration: none;
+  border: 0.1rem solid;
+  border-color: #957dad;
+  border-radius: 20%;
+  padding: 0.2rem;
+  font-size: 2rem;
+  background-color: #957dad;
+}
+.boton-subir a:hover {
+  color: #ffff;
+  background-color: #d291bc;
+  border-color: #957dad;
+}
+
+/*---Redes sociales y Copyright---*/
 .redes {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .redes a {
-  color: salmon;
+  color: #d291bc;
 }
 .redes a:hover {
-  color: rebeccapurple;
+  color: #957dad;
+}
+
+.sub-cop {
+  flex-direction: column;
+  color: #957dad;
+  font-size: 0.75rem;
 }
 
 /*---Título promoción---*/
 .prom-title {
   text-align: center;
   background: none;
-  background-color: rebeccapurple;
+  background-color: #957dad;
   padding: 2rem;
-  color: white;
+  color: #ffff;
   font-size: 3rem;
 }
 @media screen and (max-width: 768px) {
@@ -59,28 +123,31 @@
 }
 
 /*---Imagen promoción---*/
-.prom-img .carousel-75 {
+.prom-img .card {
+  border: none;
+}
+.prom-img .card .carousel-75 {
   margin-top: 2rem !important;
 }
-.prom-img .carousel-75 .flecha {
-  background-color: rebeccapurple;
+.prom-img .card .carousel-75 .flecha {
+  background-color: #957dad;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-  .prom-img .carousel-75 {
+  .prom-img .card .carousel-75 {
     padding: 0.8rem;
     font-size: 2.5rem;
     margin-top: 0.5rem !important;
   }
 }
-.prom-img h3 {
-  color: salmon;
+.prom-img .card h3 {
+  color: #d291bc;
 }
 
 /*---Formulario dudas---*/
 .dudas {
   font-family: "Cabin", sans-serif;
-  color: rebeccapurple;
+  color: #957dad;
 }
 .dudas h2 {
   text-align: center;
@@ -91,23 +158,23 @@
     font-size: 1.5rem;
   }
 }
-.dudas label {
+.dudas .label {
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .dudas .btn-primary {
-  color: white;
-  background-color: rebeccapurple;
-  border-color: rebeccapurple;
+  color: #ffff;
+  background-color: #957dad;
+  border-color: #957dad;
   margin: 2rem;
   font-size: 1rem;
   font-family: "Cabin", sans-serif;
 }
 .dudas .btn-primary:hover {
-  color: rebeccapurple;
-  background-color: salmon;
-  border-color: rebeccapurple;
+  color: #957dad;
+  background-color: #d291bc;
+  border-color: #957dad;
 }
 
 * {
@@ -117,14 +184,12 @@
 }
 
 /*---Fondo de páginas---*/
-body,
-footer {
-  background-image: url("../img/fondo-pag.jpg");
-  background-repeat: repeat;
+main {
+  background-color: #ffff;
   margin: 0.25rem;
 }
 
-.prod-nav .box-prod .tab-pane .img-prod, .prod-nav, .quienes, .img-portada, .redes, .prom-img {
+.prod-nav .box-prod .tab-pane .img-prod, .prod-nav, .quienes, .img-portada, footer, .newsletter, .redes, .sub-cop, .prom-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,13 +197,15 @@ footer {
 
 /*---Imagen con título de página---*/
 .img-title {
-  margin-bottom: 1rem;
-  border: none;
   /*---Slogan en página principal---*/
   /*---Nombre de categoría---*/
 }
+.img-title .card {
+  border: none;
+  margin-bottom: 1rem;
+}
 @media screen and (max-width: 768px) {
-  .img-title {
+  .img-title .card {
     margin-bottom: 0.25rem;
   }
 }
@@ -156,7 +223,7 @@ footer {
   }
 }
 .img-title .tarjeta-texto .slogan {
-  color: salmon;
+  color: #d291bc;
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 4rem;
@@ -177,13 +244,13 @@ footer {
   }
 }
 .img-title .cat-name {
-  color: salmon;
   font-family: "Cabin", sans-serif;
   font-style: italic;
   font-size: 6rem;
   width: 22rem;
   margin-top: 1rem;
   margin-left: 0.25rem;
+  color: #d291bc;
 }
 @media screen and (max-width: 768px) {
   .img-title .cat-name {
@@ -203,11 +270,26 @@ footer {
 /*---¿Quienes somos?---*/
 .quienes {
   flex-direction: column;
+  font-size: 2rem;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .quienes {
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .quienes {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .quienes .quest {
-  color: rebeccapurple;
+  color: #957dad;
   font-family: "Cabin", sans-serif;
   font-size: 3rem;
 }
@@ -226,7 +308,7 @@ footer {
   }
 }
 .quienes .answ {
-  color: salmon;
+  color: #d291bc;
   font-family: "Cabin", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -252,8 +334,14 @@ footer {
   font-family: "Cabin", sans-serif;
   font-size: 1.5rem;
 }
+.prod-nav .talles a {
+  color: #957dad;
+}
 .prod-nav .talles a:hover {
-  color: salmon;
+  color: #d291bc;
+}
+.prod-nav .talles .active {
+  color: #d291bc;
 }
 .prod-nav .box-prod .tab-pane {
   transition: 0.5s;
@@ -264,6 +352,9 @@ footer {
 .prod-nav .box-prod .tab-pane .img-prod:hover {
   transform: scale(1.05);
 }
+.prod-nav .box-prod .tab-pane .img-prod .prec-prod .card-title {
+  color: #957dad;
+}
 @media screen and (max-width: 576px) {
   .prod-nav .box-prod .tab-pane .img-prod .prec-prod {
     width: 75%;
@@ -271,15 +362,16 @@ footer {
 }
 .prod-nav .box-prod .tab-pane .img-prod .prec-prod .descuento {
   margin-left: 1rem;
-  color: rebeccapurple;
-  border: solid rebeccapurple;
+  color: #957dad;
+  border: solid #957dad;
   border-radius: 20%;
 }
 .prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-ant {
   text-decoration: line-through;
+  color: #000000;
 }
 .prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-nuevo {
-  color: rebeccapurple;
+  color: #d291bc;
   font-weight: bold;
 }
 
