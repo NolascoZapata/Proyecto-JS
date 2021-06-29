@@ -1,38 +1,262 @@
-@charset "UTF-8";
-/*---Colores---*/
-/*---Fuente---*/
-/*---Header---*/
+* {
+  margin: 0;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
 .img-portada {
   background-color: #ffff;
   height: 20vh;
 }
+
 .img-portada img {
   height: 20vh;
 }
+
 @media screen and (max-width: 576px) {
   .img-portada {
     height: 15vh;
   }
+
   .img-portada img {
     height: 15vh;
   }
 }
 
-.navbar .navbar-nav .active {
-  color: #d291bc !important;
+
+
+
+
+
+
+/*---Fondo de página---*/
+main {
+  background-color: #ffff;
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: column;
 }
-.navbar .navbar-nav a {
-  font-size: 1.5rem;
-  color: #957dad !important;
+
+
+/*---Imagen con título de página---*/
+.img-title {
+  border: none;
+  margin: 2rem;
 }
-.navbar .navbar-nav a:hover {
-  color: #d291bc !important;
+
+.img-title .tarjeta-texto {
+  padding: 0.7rem 0.7rem 0rem 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .img-title .tarjeta-texto {
+    padding: 0.7rem 0.7rem 0.7rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-title .tarjeta-texto {
+    padding: 0.3rem;
+  }
+}
+
+.img-title .tarjeta-texto .slogan {
+  color: #d291bc;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+  width: 20rem;
+  top: 4.75rem;
+  left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .img-title .tarjeta-texto .slogan {
+    font-size: 2.5rem;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-title .tarjeta-texto .slogan {
+    font-size: 1.45rem;
+    width: 7rem;
+  }
+}
+
+.img-title .cat-name {
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #d291bc;
+}
+
+@media screen and (max-width: 768px) {
+  .img-title .cat-name {
+    font-size: 3.5rem;
+  }
+}
+
+
+/*---Productos---*/
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.div_prod {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 100px;
+
+}
+
+.div_prod .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15%;
+}
+
+.div_prod .card:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.div_prod .card .agregar {
+  border-radius: 20%;
+  background-color: #ffff;
+  margin-bottom: 10px;
+  right: 12px;
+  border: solid 0.75px #957dad;
+  color: #957dad;
+}
+.div_prod .card .agregar:hover {
+  color: #ffff;
+  background-color: #957dad;
+}
+
+.div_prod .card .nombre{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Cabin", sans-serif;
+  color: #957dad;
+
+}
+.div_prod .card .precio{
+  font-family: "Cabin", sans-serif;
+  color: #d291bc;
+  margin-top: 3.5px;
+}
+
+.carrito {
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  right: 10px;
+  
+}
+
+
+
+.carrito .carrito-flotante{
+  position: absolute;
+  right: 45px;
+  top: -45px;
+
+}
+.carrito .carrito-flotante:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.carrito .carrito-flotante .carrito-logo{
+  background-color: #d291bc;
+  color:#ffff;
+  padding: 24%;
+  border-radius: 50%;
+}
+
+
+.carrito h3{
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  color: #957dad;
+}
+.carrito .contenedor-carrito {
+  background-color: #ffff;
+  width: 100%;
+  padding: 1%;
+  border-radius: 5%;
+  margin-top: 10px;
+  border: 1px solid #d291bc;
+  opacity: 0;
+}
+
+.prov-tabla button{
+  border-radius: 20%;
+  background-color: #957dad;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  right: 12px;
+  border: solid 0.75px #ffff;
+  color: #ffff;
+  font-size: 25px;
+}
+.prov-tabla button:hover{
+  color: #957dad;
+  background-color: #ffff;
+  border: solid 0.75px #957dad;
+}
+
+.show{
+  pointer-events: auto;
+  opacity: 1 !important;
+}
+
+.carrito .contenedor-carrito .btn-danger{
+  padding: 7px;
+}
+.carrito .contenedor-carrito .cerrarCarrito{
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  color: #957dad;
+  
+}
+.carrito .contenedor-carrito .columnas{
+  font-family: "Cabin", sans-serif;
+}
+
+.carrito .contenedor-carrito .monto-total{
+  text-align: right;
+  color: #d291bc;
+  font-family: "Cabin", sans-serif;
+
+}
+
+.carrito .contenedor-carrito .nombre_prod, .carrito .contenedor-carrito .precio, .carrito .contenedor-carrito .cantidad{
+  font-family: "Cabin", sans-serif
+}
+
 
 footer {
   background-color: #ffdfd3;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
 /*---Newsletter---*/
@@ -40,13 +264,16 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1.2rem;
   flex-direction: column;
+  width: 50%;
 }
+
 @media screen and (max-width: 576px) {
   .newsletter {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
 }
+
 .newsletter label {
   font-size: 1rem;
   margin-top: 1rem;
@@ -54,6 +281,7 @@ footer {
   color: #957dad;
   font-weight: 800;
 }
+
 @media screen and (max-width: 576px) {
   .newsletter label {
     font-size: 0.5rem;
@@ -63,6 +291,7 @@ footer {
     font-weight: 800;
   }
 }
+
 .newsletter .btn-primary {
   color: #ffff;
   background-color: #957dad;
@@ -71,11 +300,13 @@ footer {
   font-family: "Cabin", sans-serif;
   margin: 1rem;
 }
+
 .newsletter .btn-primary:hover {
   color: #ffff;
   background-color: #d291bc;
   border-color: #957dad;
 }
+
 @media screen and (max-width: 576px) {
   .newsletter .btn-primary {
     font-size: 0.5rem;
@@ -86,11 +317,13 @@ footer {
 .boton-subir {
   margin-top: 1rem;
 }
+
 @media screen and (max-width: 576px) {
   .boton-subir {
     margin-top: 0.5rem;
   }
 }
+
 .boton-subir a {
   font-family: "Cabin", sans-serif;
   color: #ffff;
@@ -103,11 +336,13 @@ footer {
   font-size: 2rem;
   background-color: #957dad;
 }
+
 .boton-subir a:hover {
   color: #ffff;
   background-color: #d291bc;
   border-color: #957dad;
 }
+
 @media screen and (max-width: 576px) {
   .boton-subir a {
     border: 0.1rem solid;
@@ -121,9 +356,11 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .redes a {
   color: #d291bc;
 }
+
 .redes a:hover {
   color: #957dad;
 }
@@ -134,264 +371,38 @@ footer {
   font-size: 0.75rem;
 }
 
-/*---Título promoción---*/
-.prom-title {
-  text-align: center;
-  background: none;
-  background-color: #957dad;
-  padding: 2rem;
-  color: #ffff;
-  font-size: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .prom-title {
-    padding: 1.25rem;
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .prom-title {
-    padding: 0.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-/*---Imagen promoción---*/
-.prom-img .card {
-  border: none;
-}
-.prom-img .card .carousel-75 {
-  margin-top: 2rem !important;
-}
-.prom-img .card .carousel-75 .flecha {
-  background-color: #957dad;
-  border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .prom-img .card .carousel-75 {
-    padding: 0.8rem;
-    font-size: 2.5rem;
-    margin-top: 0.5rem !important;
-  }
-}
-.prom-img .card h3 {
-  color: #d291bc;
-}
-
-/*---Formulario dudas---*/
-.dudas {
+footer .dudas {
   font-family: "Cabin", sans-serif;
   color: #957dad;
-}
-.dudas h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-@media screen and (max-width: 576px) {
-  .dudas h2 {
-    font-size: 1.5rem;
-  }
-}
-.dudas .label {
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.dudas .btn-primary {
-  color: #ffff;
-  background-color: #957dad;
-  border-color: #957dad;
-  margin: 2rem;
-  font-size: 1rem;
-  font-family: "Cabin", sans-serif;
-}
-.dudas .btn-primary:hover {
-  color: #957dad;
-  background-color: #d291bc;
-  border-color: #957dad;
-}
 
-* {
-  margin: 0;
-  padding: 0 auto;
-  box-sizing: border-box;
 }
+footer h2 {
+      text-align: center;
+      font-size: 3rem;
 
-/*---Fondo de páginas---*/
-main {
-  background-color: #ffff;
-  margin: 0.25rem;
-}
+      @media screen and (max-width:576px) {
+          font-size: 1.5rem;
 
-.prod-nav .box-prod .tab-pane .img-prod, .prod-nav, .quienes, .img-portada, footer, .newsletter, .redes, .sub-cop, .prom-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      }
+  }
 
-/*---Imagen con título de página---*/
-.img-title {
-  border: none;
-  /*---Slogan en página principal---*/
-  /*---Nombre de categoría---*/
-}
-.img-title .tarjeta-texto {
-  padding: 0.7rem 0.7rem 0rem 3rem;
-}
-@media screen and (max-width: 768px) {
-  .img-title .tarjeta-texto {
-    padding: 0.7rem 0.7rem 0.7rem 1.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .img-title .tarjeta-texto {
-    padding: 0.3rem;
-  }
-}
-.img-title .tarjeta-texto .slogan {
-  color: #d291bc;
-  font-family: "Cabin", sans-serif;
-  font-style: italic;
-  font-size: 4rem;
-  width: 20rem;
-  top: 4.75rem;
-  left: 2rem;
-}
-@media screen and (max-width: 768px) {
-  .img-title .tarjeta-texto .slogan {
-    font-size: 2.5rem;
-    width: 10rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .img-title .tarjeta-texto .slogan {
-    font-size: 1.45rem;
-    width: 7rem;
-  }
-}
-.img-title .cat-name {
-  font-family: "Cabin", sans-serif;
-  font-style: italic;
-  font-size: 6rem;
-  text-align: center;
-  margin-top: 1rem;
-  color: #d291bc;
-}
-@media screen and (max-width: 768px) {
-  .img-title .cat-name {
-    font-size: 3.5rem;
-  }
-}
+footer .label {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
-/*---¿Quienes somos?---*/
-.quienes {
-  flex-direction: column;
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .quienes {
-    font-size: 1.5rem;
-    margin-top: 0.75rem;
-    margin-bottom: 1rem;
   }
-}
-@media screen and (max-width: 768px) {
-  .quienes {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
-.quienes .quest {
-  color: #957dad;
-  font-family: "Cabin", sans-serif;
-  font-size: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .quienes .quest {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .quienes .quest {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-.quienes .answ {
-  color: #d291bc;
-  font-family: "Cabin", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  width: 57vw;
-}
-@media screen and (max-width: 768px) {
-  .quienes .answ {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .quienes .answ {
-    font-size: 0.8rem;
-  }
-}
 
-/*---Navegador de talles y productos---*/
-.prod-nav {
-  flex-direction: column;
+footer .btn-primary {
+      color: #ffff;
+      background-color: #957dad;
+      border-color: #957dad;
+      margin: 2rem;
+      font-size: 1rem;
+      font-family: "Cabin", sans-serif;
 }
-.prod-nav .talles {
-  margin-bottom: 2rem;
-  font-family: "Cabin", sans-serif;
-  font-size: 1.5rem;
+footer .btn-primary:hover {
+          color: #957dad;
+          background-color: #ffff;
+          border-color: #957dad;
 }
-.prod-nav .talles a {
-  color: #957dad;
-}
-.prod-nav .talles a:hover {
-  color: #d291bc;
-}
-.prod-nav .talles .active {
-  color: #d291bc;
-}
-.prod-nav .box-prod .tab-pane {
-  transition: 0.5s;
-}
-.prod-nav .box-prod .tab-pane .img-prod {
-  margin-bottom: 2rem;
-}
-.prod-nav .box-prod .tab-pane .img-prod:hover {
-  transform: scale(1.05);
-}
-.prod-nav .box-prod .tab-pane .img-prod .prec-prod {
-  /*------Precios en Ofertas------*/
-}
-.prod-nav .box-prod .tab-pane .img-prod .prec-prod .card-title {
-  color: #957dad;
-}
-@media screen and (max-width: 576px) {
-  .prod-nav .box-prod .tab-pane .img-prod .prec-prod {
-    width: 75%;
-  }
-}
-.prod-nav .box-prod .tab-pane .img-prod .prec-prod .descuento {
-  margin-left: 1rem;
-  color: #957dad;
-  border: solid #957dad;
-  border-radius: 20%;
-}
-.prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-ant {
-  text-decoration: line-through;
-  color: #000000;
-}
-.prod-nav .box-prod .tab-pane .img-prod .prec-prod .prec-nuevo {
-  color: #d291bc;
-  font-weight: bold;
-}
-
-/*# sourceMappingURL=style.css.map */

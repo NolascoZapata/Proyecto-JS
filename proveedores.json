@@ -1,0 +1,21 @@
+[
+    {
+        "proveedor": "Cheeky",
+        "estacion": "Invierno"
+    },
+
+    {
+        "proveedor": "Carters",
+        "estacion": "Otoño"
+    },
+
+    {
+        "proveedor": "Oshkosh",
+        "estacion": "Primavera"
+
+    } ,
+    {
+        "proveedor": "Grisino",
+        "estacion": "Verano"
+    }
+]
