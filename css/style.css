@@ -204,16 +204,7 @@ main {
   opacity: 0;
 }
 
-.prov-tabla button{
-  border-radius: 20%;
-  background-color: #957dad;
-  margin-bottom: 10px;
-  margin-top: 50px;
-  right: 12px;
-  border: solid 0.75px #ffff;
-  color: #ffff;
-  font-size: 25px;
-}
+
 .prov-tabla button:hover{
   color: #957dad;
   background-color: #ffff;
@@ -249,8 +240,49 @@ main {
 .carrito .contenedor-carrito .nombre_prod, .carrito .contenedor-carrito .precio, .carrito .contenedor-carrito .cantidad{
   font-family: "Cabin", sans-serif
 }
+.prov-tabla {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.prov-tabla button{
+  border-radius: 20%;
+  background-color: #957dad;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  right: 12px;
+  border: solid 0.75px #ffff;
+  color: #ffff;
+  font-size: 25px;
+  width: 30%;
+}
 
 
+.prov-tabla .tit-prov .tit-bloc{
+  background-color: #957dad;
+  border: #ffff solid 3px;
+}
+.prov-tabla .tit-prov p {
+margin-top: 5px;
+color: white;
+
+}
+
+
+.prov-tabla .list-prov{
+  color: #957dad;
+}
+
+.prov-tabla .tit-prov, .list-prov{
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+  opacity: 0;
+}
 footer {
   background-color: #ffdfd3;
   display: flex;

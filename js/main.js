@@ -368,6 +368,7 @@ $(cerrar).click(()=>{
 
 
 
+//tabla proveedores
 
 const proveedoresTabla= document.createElement('section');
 proveedoresTabla.className="prov-tabla"
@@ -388,12 +389,12 @@ listaProv.className='list-prov row columnas'
 proveedoresTabla.appendChild(listaProv);
 
 listaTitleProv.innerHTML=`
-<div class="col-6 bg-dark text-white">
+<div class="col-6 tit-bloc text-white">
     <div>        
         <p>Proveedor</p>
     </div>
 </div>
-<div class="col-6 bg-dark text-white">
+<div class="col-6 tit-bloc text-white">
     <div>
         <p>Estacion</p>
     </div>
@@ -423,3 +424,9 @@ $('#btn-prv').click(function (e) {
         });
     });
 });
+
+$(btnProv).click(()=>{
+    listaTitleProv.classList.add('show');
+    listaProv.classList.add('show')
+    
+})
