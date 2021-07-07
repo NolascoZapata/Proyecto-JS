@@ -65,35 +65,10 @@
 
   <!---- Pie de página ---->
   <footer>
-    <section class="dudas container">
-      <h2>Envianos tus dudas!</h2>
-      <form action="#" method="GET" id="formulario">
-        <div class="form-goup">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" class="form-control" value="" />
-        </div>
-        <div class="form-goup">
-          <label for="apellido">Apellido:</label><br>
-          <input type="text" name="apellido" id="apellido" class="form-control" value="" />
-        </div>
-        <div class="form-goup">
-          <label for="email">Email:</label><br>
-          <input type="email" name="email" id="email" class="form-control" />
-        </div>
-        <div class="form-goup">
-          <label for="comentario">Comentario:</label>
-          <textarea name="comments" id="comentario" cols="25" rows="10" class="form-control"></textarea>
-        </div>
-
-        <div class="custom-control custom-checkbox checkbox">
-          <input type="checkbox" class="custom-control-input" id="customCheck1">
-          <label class="custom-control-label" for="customCheck1">Quiero recibir notificaciones de
-            promociones</label>
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-      </form>
-
-    </section>
+    <div>
+      <h2>Encontranos en Portal Salta </h2>
+      <div id="map"></div>
+    </div>
 
 
     <!-- Redes sociales y Copyright-->
@@ -120,6 +95,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
   <script src="https://kit.fontawesome.com/604e1bdefb.js" crossorigin="anonymous"></script>
 
 

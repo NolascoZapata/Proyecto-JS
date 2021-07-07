@@ -39,41 +39,41 @@ for (const item of prod) {
 const portada = new Image();
 portada.setAttribute('src', 'img/paginainicio.jpeg');
 portada.className = 'img-portada';
-document.querySelector('header').appendChild(portada);
+document.querySelector('header').append(portada);
 
 
 //section0 = seccion con imagen y titulo de pagina
 const section0 = document.createElement('section');
 section0.className = 'img-title';
-document.querySelector('main').appendChild(section0);
+document.querySelector('main').append(section0);
 
 //imagen portada
 let img_titulo = new Image();
 img_titulo.setAttribute('src', 'img/bebes/portada-bebes.jpg');
 img_titulo.className = 'card-img';
-document.querySelector('section').appendChild(img_titulo);
+document.querySelector('section').append(img_titulo);
 
 //titulo pagina
 let titulo = document.createElement('h1');
 titulo.textContent = "Ropa para Bebés";
 titulo.className = 'cat-name';
-document.querySelector('section').appendChild(titulo);
+document.querySelector('section').append(titulo);
 
 
 //section1= seccion de productos
 const section1 = document.createElement('section');
 section1.className = 'section1';
-document.querySelector('main').appendChild(section1);
+document.querySelector('main').append(section1);
 
 const div_prod = document.createElement('div');
 div_prod.className = 'div_prod';
-document.querySelector('.section1').appendChild(div_prod);
+document.querySelector('.section1').append(div_prod);
 
 //---------------------------------------------------------------------
 
 const carrito= document.createElement('section');
 carrito.className='carrito'
-document.querySelector('main').appendChild(carrito)
+document.querySelector('main').append(carrito)
 
 const carrito_flotante = document.createElement('div');
 carrito_flotante.className='carrito-flotante';
@@ -81,25 +81,25 @@ carrito_flotante.innerHTML = `
 <i class="fas fa-shopping-cart fa-2x carrito-logo" id="abrir"></i>
 `
 
-document.querySelector('.carrito').appendChild(carrito_flotante);
+document.querySelector('.carrito').append(carrito_flotante);
 
 
 // contenedor carrito
 const contenedor_carrito = document.createElement('div');
 contenedor_carrito.className = 'contenedor-carrito';
-document.querySelector('.carrito').appendChild(contenedor_carrito);
+document.querySelector('.carrito').append(contenedor_carrito);
 
 
 //Titulo carrito
 let nombreCarrito = document.createElement('h3');
 nombreCarrito.textContent = "Carrito";
 nombreCarrito.className = 'titulo-carrito';
-contenedor_carrito.appendChild(nombreCarrito);
+contenedor_carrito.append(nombreCarrito);
 
 //Icono para cerrar carrito
 let cerrarCarrito = document.createElement('div');
 cerrarCarrito .innerHTML=`<i class="fas fa-times cerrarCarrito" id="cerrar"></i>`
-contenedor_carrito.appendChild(cerrarCarrito);
+contenedor_carrito.append(cerrarCarrito);
 
 //Columnas carrito
 const columnasCarrito = document.createElement('div')
@@ -126,38 +126,25 @@ contenedor_carrito.append(columnasCarrito);
 //Prodcutos en Carrito
 const prodEnCarrito = document.createElement('div');
 prodEnCarrito.className = 'prod-en-carrito';
-document.querySelector('.contenedor-carrito').appendChild(prodEnCarrito);
+document.querySelector('.contenedor-carrito').append(prodEnCarrito);
 
 //-----------------------------------------------------
 //total carrito 
 const totalCarrito = document.createElement('div');
 totalCarrito.className = 'total-carrito';
-document.querySelector('.contenedor-carrito').appendChild(totalCarrito);
+document.querySelector('.contenedor-carrito').append(totalCarrito);
 
 //Monto a pagar
 let montoTotal = document.createElement('p');
-totalCarrito.appendChild(montoTotal);
+totalCarrito.append(montoTotal);
 montoTotal.textContent = "Toltal: $0";
 montoTotal.className = 'monto-total';
 
 //boton comprar
 let comprar = document.createElement('button');
 comprar.textContent = "Comprar";
-comprar.className = 'btn btn-success comprar';
-contenedor_carrito.appendChild(comprar);
-
-//region
-// const region_selector = document.createElement('div');
-// region_selector.className = 'select-region';
-// document.querySelector('header').appendChild(region_selector);
-// region_selector.innerHTML=
-// `<select name="reg">
-// <option value="Arg"selected>ARG</option>
-// <option value="EU">EU</option>
-// <option value="US">US</option>
-// </select>`
-
-
+comprar.className = 'btn comprar';
+contenedor_carrito.append(comprar);
 
 //Productos en section1 
 prod.forEach((item) => { // para cada elemento del array prod, a crear una tarjeta
@@ -170,24 +157,24 @@ prod.forEach((item) => { // para cada elemento del array prod, a crear una tarje
     img.width = 150;
     img.height = 150;
     img.className = 'img';
-    card.appendChild(img) // agrega una imagen dentro de la tarjeta
+    card.append(img) // agrega una imagen dentro de la tarjeta
 
     let nombre = document.createElement('p');
     nombre.textContent = item.nombre;
     nombre.className = 'nombre';
-    card.appendChild(nombre); // agrega el nombre del producto dentro de la tarjeta
+    card.append(nombre); // agrega el nombre del producto dentro de la tarjeta
 
     let precio = document.createElement('p');
     precio.textContent = item.precio;
     precio.className = 'precio';
-    card.appendChild(precio); // agrega el precio del producto dentro de la tarjeta
+    card.append(precio); // agrega el precio del producto dentro de la tarjeta
 
     let agregar = document.createElement('button');
     agregar.textContent = "Agregar al carrito";
     agregar.className = 'agregar';
-    card.appendChild(agregar); // agrega el boton "agregar al carrito" del producto dentro de la tarjeta
+    card.append(agregar); // agrega el boton "agregar al carrito" del producto dentro de la tarjeta
 
-    div_prod.appendChild(card);
+    div_prod.append(card);
 
 });
 
@@ -202,7 +189,8 @@ botonAgregar.forEach(boton => {
 })
 
 const botonComprar = $('.comprar');
-$(botonComprar).click(compraRealizada);
+
+$(botonComprar).click(compraRealizada)  
 
 
 
@@ -225,7 +213,8 @@ function seleccionProd(event) {
 
 //funcion agregar al carrito 
 function agregarEnCarrito(itemNombre, itemPrecio, itemImagen) {
-    swal(`Agregando al carrito ${itemNombre}`,"", "success");
+    swal(`Agregando al carrito ${itemNombre}`,"", "success" );
+    
     const array_nombres_prod_carrito = contProdCarrito.getElementsByClassName('nombre_prod'); // array con nombres de prodcutos
 
     for (let index = 0; index < array_nombres_prod_carrito.length; index++) { //para evitar la repeticion 
@@ -263,14 +252,14 @@ function agregarEnCarrito(itemNombre, itemPrecio, itemImagen) {
     <div class="col-4">
         <div class="d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
             <input class="cantidad" type="number" value= "1">
-            <button class="btn btn-danger" type="button">x</button>
+            <div class=" btn-eliminar"><i class="far fa-trash-alt btn-trash"></i></div>
         </div>
     </div>
 </div>`
     listaProdEnCarrito.innerHTML = contCompra;
     contProdCarrito.append(listaProdEnCarrito);
 
-    $(listaProdEnCarrito.querySelector('.btn-danger')).click(eliminarProducto);
+    $(listaProdEnCarrito.querySelector('.btn-eliminar')).click(eliminarProducto);
     $(listaProdEnCarrito.querySelector('.cantidad')).change (cambiarCantidad);
     
     actualizarTotal()
@@ -319,31 +308,41 @@ function cambiarCantidad(event) {
 
 //Compra realizada 
 function compraRealizada(){
-
-    contProdCarrito.innerHTML="";
-    actualizarTotal();
-    swal({
-        title: "Realizar compra?",
-        icon: "warning",
-        buttons: ["Si, Realizar la compra","No, cancelar la compra"],
-        dangerMode: true,
-      })
-      .then((willDelete) => {
-        if (willDelete) {
-          swal("Compra cancelada", {
-            icon: "error",
-          });
-        } else {
-          swal("Se a efectuado la compra, Muchas gracias!",{
-            icon: "success",
+    if (montoTotal.textContent == "Toltal: $0") {
+        swal({
+            title: "El carrito está vacío",
+            icon: "warning",
             
-          });
-         
-        let comprasAnteriores = Number(localStorage.getItem('Cantidad de compras realizadas:'))
-        compras = comprasAnteriores+1
-        localStorage.setItem('Cantidad de compras realizadas:',compras)
-        }
-      });
+        })
+    } else {
+        swal({
+            title: `Realizar compra por ${document.querySelector('.monto-total').textContent.replace("Total:","")}?`,
+            icon: "warning",
+            buttons: ["Si, Realizar la compra","No, cancelar la compra"],
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+            swal("Compra cancelada", {
+                icon: "error",
+            });
+            } else {
+            swal({
+                title:`Se a efectuado la compra por ${document.querySelector('.monto-total').textContent.replace("Total:","")}, Muchas gracias!`,
+                icon: "success",
+                
+            });
+            contProdCarrito.innerHTML="";
+            actualizarTotal();
+            let comprasAnteriores = Number(localStorage.getItem('Cantidad de compras realizadas:'))
+            compras = comprasAnteriores+1
+            localStorage.setItem('Cantidad de compras realizadas:',compras)
+            }
+        });
+    }
+    
+    
+    
     
     
     
@@ -372,21 +371,21 @@ $(cerrar).click(()=>{
 
 const proveedoresTabla= document.createElement('section');
 proveedoresTabla.className="prov-tabla"
-document.querySelector('main').appendChild(proveedoresTabla);
+document.querySelector('main').append(proveedoresTabla);
 
 let btnProv = document.createElement('button');
 btnProv.textContent = "Nuestros proveedores";
 btnProv.id = 'btn-prv';
-proveedoresTabla.appendChild(btnProv);
+proveedoresTabla.append(btnProv);
 
 let listaTitleProv = document.createElement('div');
 listaTitleProv.className='tit-prov row columnas'
-proveedoresTabla.appendChild(listaTitleProv)
+proveedoresTabla.append(listaTitleProv)
 
 let listaProv = document.createElement('div');
 listaProv.id='res';
 listaProv.className='list-prov row columnas'
-proveedoresTabla.appendChild(listaProv);
+proveedoresTabla.append(listaProv);
 
 listaTitleProv.innerHTML=`
 <div class="col-6 tit-bloc text-white">
@@ -407,7 +406,7 @@ $('#btn-prv').click(function (e) {
     $('#res').html(" ");
     $.get("proveedores.json",function(data){
         $.each(data, function (index, item) { 
-             $('#res').html($('#res').html()+`
+            $('#res').html($('#res').html()+`
 
             <div class="col-6">
                 <div>
@@ -430,3 +429,16 @@ $(btnProv).click(()=>{
     listaProv.classList.add('show')
     
 })
+
+// Ubicacion
+function iniciarMap(){
+    var coord = {lat:-24.772130 ,lng: -65.412865};
+    var map = new google.maps.Map(document.getElementById('map'),{
+    zoom: 15,
+    center: coord
+    });
+    var marker = new google.maps.Marker({
+    position: coord,
+    map: map
+    });
+}
