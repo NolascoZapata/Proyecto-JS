@@ -431,14 +431,14 @@ $(btnProv).click(()=>{
 })
 
 // Ubicacion
-function iniciarMap(){
-    var coord = {lat:-24.772130 ,lng: -65.412865};
-    var map = new google.maps.Map(document.getElementById('map'),{
+function ubicacionLocal(){
+    var coordenadas = {lat:-24.772130 ,lng: -65.412865};
+    var mapa = new google.maps.Map(document.getElementById('map'),{
     zoom: 15,
-    center: coord
+    center: coordenadas
     });
-    var marker = new google.maps.Marker({
-    position: coord,
-    map: map
+    var marcador = new google.maps.Marker({
+    position: coordenadas,
+    map: mapa,
     });
 }
