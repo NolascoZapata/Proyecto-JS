@@ -155,7 +155,7 @@ prod.forEach((item) => { // para cada elemento del array prod, a crear una tarje
     let img = new Image();
     img.setAttribute('src', item.imagen);
     img.width = 150;
-    img.height = 150;
+    img.height = 200;
     img.className = 'img';
     card.append(img) // agrega una imagen dentro de la tarjeta
 

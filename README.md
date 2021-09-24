@@ -1,6 +1,7 @@
 ## Babies
 
-    Babies es un modelo e-commerce desarrollado con Javascript. Este proyecto esta destinado para la venta de ropa para bebés. Esta compuesto por vistas de listas de productos con foto y detalles mínimos como nombre y precio del producto
+    Babies es un modelo de e-commerce para la venta de ropa para bebés desarrollado con Javascript. 
+    Esta compuesto por una lista de productos con foto y detalles mínimos como nombre y precio del producto
 
 ## Instalación
 
