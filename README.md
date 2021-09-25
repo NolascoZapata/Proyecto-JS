@@ -19,7 +19,7 @@
 
 ## Aplicación en funcionamiento
 
-![Babies en funcionamiento](NolascoZapata_Proyecto-JS_Babies.gif)
+![Babies en funcionamiento](Babies-Bebes.gif)
 
 ### Autor
     Nolasco Zapata Figueroa
